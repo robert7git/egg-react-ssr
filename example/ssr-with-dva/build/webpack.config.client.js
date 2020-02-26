@@ -102,8 +102,9 @@ module.exports = merge(baseConfig, {
   resolve: {
     alias: {
       // for this issue https://github.com/ykfe/egg-react-ssr/issues/36
-      'react-router': require.resolve('react-router')
-    }
+      'react-router': require.resolve('react-router'),
+      'react-router-dom': require.resolve('react-router-dom')
+    },
   },
   output: {
     path: paths.appBuild,
